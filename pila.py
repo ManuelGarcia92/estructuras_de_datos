@@ -11,18 +11,3 @@ def pila(lista):
         return False
     else:
         return True
-
-def pila_contador(lista):
-    pila = 0
-    for i in lista:
-        if i == "(":
-            pila += 1
-        elif i == ")":
-            if not pila:
-                return False
-            pila -= 1
-    if pila:
-        return False
-    else:
-        return True
-
